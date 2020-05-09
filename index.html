@@ -13,22 +13,63 @@
         border-collapse: collapse;
       }
       th, td {
-        padding: 10px;
+        padding: 6px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(155,125, 255);
+      }
+      h2 {
+          margin-left: 30px;
+      }
+      h3 {
+          margin-left: 10px;
+      }
+      h4 {
+          margin-left: 20px;
+      }
+      h5 {
+          margin-left: 30px;
+      }
+      .vocab, .dialogue {
+          margin-left: 20px;
+      }
+      .grammar, .review {
+          margin-left: 40px;
+      }
+      #img_1 {
+          position: absolute;
+          z-index:-1;
+          width: 125px;
+          border-radius: 25px;
+          box-shadow: 5px 5px;
+      }
+      button {
+        background-color: rgb(200, 144, 195);
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;       
+        border-radius: 50px;
+        font-size: 14px;
       }
     </style>
   </head>
   <body>
-    <h1 id="my_home">Zhong Wen Ke (Mandarin Class)</h1>
+    <h1 id="my_home">Zhong Wen Ke<br>(Mandarin Class)</h1>
     <h2>Table of Contents</h2>
     <ol>
       <li><a href="#resources" title="Access resources">Resources</a></li>
       <li><a href="#learn" title="Learn vocabulary, dialogue, and grammar">Learn</a></li>
     </ol>
     <h2 id="resources">Resources</h2>
-    <a href="https://chinesepod.com/tools/pronunciation/section/17" target="_blank" title="Click to access article on ChinesePod about how to pronounce different tones.">ChinesePod: Tones and Pronunciation</a>
-    <br><a href="https://classroom.google.com/u/0/c/NzkxMzc5MTM2NjNa" title=" Access Google Classroom: Mandarino 100" target="_blank">Google Classroom</a>
-    <br><a href="https://quizlet.com/" target="_blank" title="Click to access Quizlet homepage.">Quizlet</a>
-    <br><a href="https://zoom.us" target="_blank" title="Access Zoom">Zoom</a>
+    <ul>
+    <li><a href="https://chinesepod.com/tools/pronunciation/section/17" target="_blank" title="Click to access article on ChinesePod about how to pronounce different tones.">ChinesePod: Tones and Pronunciation</a></li>
+    <li></li><a href="https://classroom.google.com/u/0/c/NzkxMzc5MTM2NjNa" title=" Access Google Classroom: Mandarino 100" target="_blank">Google Classroom</a></li>
+    <li><a href="https://quizlet.com/" target="_blank" title="Click to access Quizlet homepage.">Quizlet</a></li>
+    <li><a href="https://zoom.us" target="_blank" title="Access Zoom">Zoom</a></li>
+    </ul>
     <h2 id="learn">Learn</h2>
     <h3>Lessons</h3>
     <ol>
@@ -39,7 +80,7 @@
     </ol>
     <h4 id="lesson_1">Lesson 1</h4>
     <h5>Vocabulary</h5>
-    <ol>
+    <ol class="vocab">
       <li>wo: I, me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我</li>
       <li>ni: you&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你</li>
       <li>ni hao: hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你好</li>
@@ -50,18 +91,26 @@
       <li>tang lao shi: Teacher Tom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐老师</li>
     </ol>
     <h5>Dialogue</h5>
-    <ol>
+    <ol class="dialogue">
       <li>English: Who are you?<br>Pin Yin: Ni shi shei?<br>Characters: 你是谁?<br>&nbsp;</li>
-      <li>English: Hello! I am Teacher Tom. Who are you?<br>Pin Yin: Ni hao! Wo shi tang lao shi. Ni shi shei?<br>Characters: 你好!我是唐老师。你是谁?<br>&nbsp;</li>
-      <li>English: Hello Teacher Tom, I am Felix<br>Pin Yin: Tang lao shi ni hao，wo shi Felix.<br>Characters: 唐老师你好，我是Felix.<br>&nbsp;</li>
-      <li>English: Hello Felix. Who is that?<br>Pin Yin: Felix，ni hao. Ta shi shei?<br>Characters: Felix，你好。他是谁?<br>&nbsp;</li>
+      <li>English: Hello! I am Teacher Tom. Who are you?<br>Pin Yin: Ni hao! Wo shi tang lao shi. Ni shi shei?<br>Characters: 你好!我是唐老师. 你是谁?<br>&nbsp;</li>
+      <li>English: Hello Teacher Tom, I am Felix<br>Pin Yin: Tang lao shi ni hao，wo shi Felix.<br>Characters: 唐老师你好, 我是Felix.<br>&nbsp;</li>
+      <li>English: Hello Felix. Who is that?<br>Pin Yin: Felix, ni hao. Ta shi shei?<br>Characters: Felix, 你好. 他是谁?<br>&nbsp;</li>
       <li>English: She is Carolina<br>Pin Yin: Ta shì Carolina.<br>Characters: 他是Carolina.<br>&nbsp;</li>
       <li>English: Hello Carolina<br>Pin Yin: Carolina ni hao.<br>Characters: Carolina你好.<br>&nbsp;</li>
     </ol>
-    <a href="https://quizlet.com/507015032/lesson-1-flash-cards/?new" title="Click for Quizlet on lesson 1" target="_blank">Click for Quizlet</a>
+    <h5>Lesson 1 Review</h5>
+    <ol class="dialogue">
+        <li>Who is Tang lao shi?<br><button onclick="alert('Teacher Tom')">Click for answer!</button><br>&nbsp;</li>
+        <li>Translate to Chinese: "Hello, I am Alex. Who are you?"<br><button onclick="alert('Ni hao, wo shi Alex. Ni shi shei?')">Click for answer!</button><br>&nbsp;</li>
+        <li>What does lao shi mean?<br><button onclick="alert('Teacher')">Click for answer!</button><br>&nbsp;</li>
+        <li>Which means "you"?<br>A) wo<br>B) ni<br>C) ta<br><button onclick="alert('B) ni')">Click for answer!</button><br>&nbsp;</li>
+        <li>Translate to English: "Ni shi Bailey. Ta shi Morgan."<br><button onclick="alert('You are Bailey. She is Morgan.')">Click for answer!</button><br>&nbsp;</li>
+    </ol>
+    <br><a href="https://quizlet.com/507015032/lesson-1-flash-cards/?new" title="Click for Quizlet on lesson 1" target="_blank">Click for Quizlet</a>
     <br><h4 id="lesson_2">Lesson 2</h4>
     <h5>Vocabulary</h5>
-    <ol>
+    <ol class="vocab">
       <li>dong xi: stuff, thing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;东西</li>
       <li>xin: new&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新</li>
       <li>tong xue: classmate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同学</li>
@@ -72,7 +121,7 @@
       <li>ye: also, too&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也</li>
     </ol>
     <h5>Dialogue</h5>
-    <ol>
+    <ol class="dialogue">
       <li>English: Ming Ming’s new classmate is Ben Ben.<br>Pin Yin: Ming Ming de xin tong xue shi Ben Ben<br>Characters:明明的新同学是本本.<br>&nbsp;</li>
       <li>English: Ming Ming’s new classmate has arrived for class.<br>Pin Yin: Ming Ming de xin tong xue lai shang ke.<br>Characters:明明的新同学来上课.<br>&nbsp;</li>
       <li>English: Ming Ming and Ben Ben take Ms. Ming’s Chinese class.<br>Pin Yin: Ming Ming he Ben Ben shang Ming lao shi de zhong wen ke.<br>Characters: 明明和本本上明老师的中文课.<br>&nbsp;</li>
@@ -84,10 +133,18 @@
       <li>English: Ben Ben: It’s not Mr. Tom’s either.<br>Pin Yin: Ben Ben: Ye bu shi Tang lao shi de.<br>Characters: 本本: 也不是唐老师的.<br>&nbsp;</li>
       <li>English: Ms. Ming: Whose stuff is this?<br>Pin Yin: Ming lao shi: Zhe shi shei de?!<br>Characters: 明老师: 这是谁的?!<br>&nbsp;</li>
     </ol>
+    <h5>Lesson 2 Review</h5>
+    <ol class="dialogue">
+        <li>What does the opposite of "zhi dao" mean?<br><button onclick="alert('Do not know.')">Click for answer!</button><br>&nbsp;</li>
+        <li>Translate to Chinese: "This is not John's stuff."<br><button onclick="alert('Zhe she bu John de dong xi.')">Click for answer!</button><br>&nbsp;</li>
+        <li>Define tong xue.<br><button onclick="alert('Classmate')">Click for answer!</button><br>&nbsp;</li>
+        <li>What is the function of the word ma?<br><button onclick="alert('When placed at the end of a sentence, it makes that sentence a question.')">Click for answer!</button><br>&nbsp;</li>
+        <li>Translate to English: "Wo ye bu zhi dao shi shei de dong xi."<br><button onclick="alert('I also do not know whose stuff this is.')">Click for answer!</button><br>&nbsp;</li>
+    </ol>
     <a href="https://quizlet.com/507048716/lesson-2-flash-cards/?new" target="_blank" title="Click for Quizlet on lesson 2">Click for Quizlet</a>
     <br><h4 id="lesson_3">Lesson 3</h4>
     <h5>Vocabulary</h5>
-    <ol>
+    <ol class="vocab">
       <li>yi: one&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一</li>
       <li>er: two&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二</li>
       <li>san: three&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三</li>
@@ -101,9 +158,9 @@
       <li>wan wu: all things&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万物</li>
       <li>Shen me dong xi?: used when very confused&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么东西?</li>
     </ol>
-    <h5>Grammar</h5>
-    <p>Verb 一 Verb<br>Mostly used in speaking, infrequently used in written language.</p>
-    <table>
+    <h5 >Grammar</h5>
+    <p class="grammar">Verb 一 Verb<br>Mostly used in speaking, infrequently used in written language.</p>
+    <table class="grammar">
       <tr>
         <th>Verb</th>
         <th>English Sentence</th> 
@@ -142,7 +199,7 @@
       </tr>
     </table>
     <h5>Dialogue</h5>
-    <ol>
+    <ol class="dialogue">
       <li>English: Ming Ming! Do you know how to count?<br>Pin Yin: Ming Ming! Ni zhi dao zen me shu yi shu ma?<br>Characters: 本本: 明明！你知道怎么数一数吗?<br>&nbsp;</li>
       <li>English: Yes, I know! Do you also know (how to count)?<br>Pin Yin: Wo zhi dao! Ni ye zhi dao ma?<br>Characters: 明明: 我知道！你也知道吗?<br>&nbsp;</li>
       <li>English: I know! Look! One, two, three!<br>Pin Yin: Zhi dao! Ni kan! yī, er, san!<br>Characters: 本本: 知!你看!一, 二, 三!<br>&nbsp;</li>
@@ -153,7 +210,7 @@
     <a href="https://quizlet.com/507052747/lesson-3-flash-cards/?new" target="_blank" title="Click for Quizlet on lesson 3">Click for Quizlet</a>
         <br><h4 id="lesson_4">Lesson 4</h4>
     <h5>Vocabulary</h5>
-    <ol>
+    <ol class="vocab">
       <li>yi ge: a, one, an&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个</li>
       <li>ha: ha(sound of laughter)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哈</li>
       <li>ren: person&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人</li>
@@ -172,7 +229,7 @@
       <li>yi ge dong xi: a/one thing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个东西</li>
     </ol>
     <h5>Dialogue</h5>
-    <ol>
+    <ol class="dialogue">
       <li>English: Ben Ben: Are you a thing?<br>Pin Yin: Ben Ben: Ni shi yi ge dong xi ma?<br>Characters: 本本: 你是一个东西吗?<br>&nbsp;</li>
       <li>English: Ming Ming: No! I’m not a thing, I’m a person!<br>Pin Yin: Ming Ming: Bu shi! Wo bu shi yi ge dong xi ，wo shi yi ge ren!<br>Characters: 明明: 不是! 我不是一个东西, 我是一个人!<br>&nbsp;</li>
       <li>English: Ben Ben: Hahahaha, you’re not a thing! That’s hilarious.<br>Pin Yin: Ben Ben: Ha ha ha ha, ni bu shi yi ge dong xi ！Hao gao xiao.<br>Characters: 本本: 哈哈哈哈, 你不是一个东西! 好搞笑!<br>&nbsp;</li>
