@@ -338,6 +338,53 @@
           margin-top:-245px;
           z-index: 2;
       }
+      #lesson_4 {
+          position: absolute;
+          margin-top: 410px;
+          margin-left: -80px;
+      }
+      #l4v {
+          margin-top: 470px;
+          margin-left: -800px;
+      }
+      #l4vh {
+          position: absolute;
+          margin-top: 460px;
+          margin-left: -530px;
+      }
+      #l4dh {
+          position: absolute;
+          margin-left: 260px;
+          margin-top: -372px;
+          z-index:2;
+      }
+      #l4d {
+          position: absolute;
+          margin-left: 000px;
+          margin-top: -375px;
+      }
+      #quizlet4_link_img {
+          position: absolute;
+          border-radius: 15px;
+          margin-left:20px;
+          margin-top:300px;
+      }
+      #quizlet4_link_text {
+          position: absolute;
+          margin-top:360px;
+          font-size:15px;
+          margin-left:28px;
+      }
+      #l4r {
+          position: absolute;
+          margin-left: -780px;
+          margin-top: -30px;
+      }
+      #back_to_top {
+          position: absolute;
+          margin-left: -110px;
+          margin-top: 400px;
+      }
     </style>
   </head>
   <body>
@@ -525,11 +572,13 @@
     </ol>
     </ol>
         <a href="https://quizlet.com/507052747/lesson-3-flash-cards/?new" target="_blank" title="Click to access a Quizlet on lesson 3."><img id="quizlet3_link_img" width="75" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEVCV7L////t7/ctR609U7FAVbE6UbA2Tq8qRaw5ULAyS64wSa0xSq5bbLqutdpndr76+v2Rm87c3++GkcrL0Ofo6vX09frGy+WdptOkrNZygMLS1upicr1/i8exuNvh5PFLX7VUZri8wuFvfcGWoNCMl8yBjchPYreqsdnIzOZ4hcWUF787AAAGk0lEQVR4nO2caXfqLBSFY4CEgLM2NVqrRr239f//wNehg/Vmk0mBrvc8n1sXO8CZOBAEBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEE0gSex6mp2RmsVJxEXrsd0LwSPNQvmo36+GD+FaRo+rcbTPJu8KNZNfr9MHrNg+ToedooIp9lA6eQXi+SxHPRXheK+WezW7HeKFJF8eU1L5F1YzQLNXY+3LkKp3VMleRemc5a4HnMdhBKvNeSdedrLX6NRxPX1nQj38nes1YhlTfSdNc7lL7A57FDNvBSzWMeuBZSQRNMW+k7s/J5Gdij27XUYB/5aHMEaWZh/mCvXSgBclMUvVcn8XKlJr/0K/eSZeShRze+m78hYeSdRLe8p8Bji+BaNqz/3FXiUGHslMT7cW+BRok8LNRncX+BxL0rXur7g60cIPFpUXyQKFT5GYWfWda3tglxUGW266I/mvYAnwd/BcpZXCw62kWtxJ9SufKTj3eZUQeTiDOeJYtEhL09Chj4o5L3S2cuCglqT4ErOSxORhQdbUZaUY8IJg56N63VeInHvPNFQJQn9SBoXmlB/S3ax68KGMDuKaVSasgu5NEbsz9qGDgwz7qR9pV2UcOM0vjidRW4KZtJexZqLkH3Dz7gNbdgYjywMqn98NjJInDucRL41CIzrDExP8C+t2MMElMLwBkpFvS+vDbM4cDaJJmf/t+6oGN6LU2fmVGF3vazvqA3h7dpRpig0HFLeYOuICPrFN0eF8Ahah1A3+egJLBSEjhyGhsvq0CwlwOGDG68vIjSepgkBDgFfnSzTCJbXek2/eBeZrtCJS4SWdNF4OCJAH23jwppKVJ1pEWXpZ/CbIwdpIvzebQwfjOSfHRxHQV/RynmhheFiI8borLCxnTn/KordHNT4kTds97XhMt3a94gMrKeWO6YLQreddVMD/X1Lq4eWhn2fLzZAYcsAC23EqfUCP0zvW+ZyyESvrOeIaCRpyzQAmRr77iIBpxXtv3Xx7w6tr9JkVjySRduRMKDQukOMQTW/dXgli3+3Y70jPH57lELgEAUpvDdolb4/apVGthVCS9PWlgKF9i1NAmrUbb2F4MW/m1r3+BxUadp6fAHq6PY9PkxzilcTZ7KY223LQdF0bH0OYeWv8BiFH4ZhMdObuUH7234ZQ8S1EjkFBt7p5D+XtQK1KAeFfQZ6MMDHZvAUJ9NVfnZiv7NGgRI8MnoSluwnV9MDK3g9+3Ua5PLReabQ8ER88L2woz34GwdnMxx1PaN6g4hhg9/3caoGM23flB4H3AXDhR6Rr9EBYfoVkoman+2hMNReuESVGnwqvvq4fgCX/sHF8Ros3o5h+JHAfv7peeIFqiV2nPS1424h3DuhkCHpvJ4+S4y8Zut4vhka9Ycaupg0bPQbdQOBdqGTo6fA1IrxBw9Iwn86xNhlOrqZgJepKZnDTSUb2PkwdXXVC56RmrrshUY2OIXdJs4621AecGSPv7qI6l4ydXOKfxkrHtULjpRrX8+wf+70haHta2hobIteagkcdt1dD8K9E8dxrbHEetekZi4vPxsmsTPc4MWlTB2zt7/j9IYX9tEnDjgSYaCgXMDe7a0SGCqf6eNHEiTqnLnFZYfwCaGNt7pWPdilWO22lOtW/cCQCH+QJ2AbiW6lt09eHV+3CEwlpg/64PEZwStc6mvWqXpfRFwaorzPtbo9WOGx3JR9m07L9qN7wSv47+Hzfi0vL3zxKEmUloO3Kot058frClUuIJ5UjvNsNFke/oyy3HAR5RpvrslWtvw1WXnzeISQ93oQ4weh9UNRjIgecdc582WNnuBBm4eFEIYk0z58/QiJW+dXZK/gwSMWqiGPtg+PHmBuTEmmfQQ6VWmDT/b05DQaP9SGefIgML1Cbe/3kNInPrw5cEXU+rm2f/EmdPtATu4+jX3HWf4tUVwhKaqHJxnGF0L3KhYofhL2YAC/9O0xRS63FdOjKzLGJe5l8Mnzn+HypZ7JyYPTNOFeho1Pnv8C10FWNY4b9oNLuYoHyEwNazzQYA0Rs0FeQeRior+OGyPYyxD6+fI3j1kvWxjcx3C6D/R1YBYf0uIOv/TdN2vzCU80643y8T/JVTrORxupbk0IZwBfBZ4RSawZ32wno1n29vY22+0PvYBp5dvTiC0R4lRHjI8kUcStd94TBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ/x/+A5iDVvc2zq3zAAAAAElFTkSuQmCC"><br><p id="quizlet3_link_text">&nbsp;Quizlet:<br>Lesson<span id="break">1</span>3</p></a>
-    
-        <br><h4 id="lesson_4">Lesson 4</h4>
+    <h4 id="lesson_4">Lesson 4</h4>
+    <span id="l4vh">
     <h5>Vocabulary</h5>
+    </span>
+    <div id="l4v">
     <ol class="vocab">
-      <li>yi ge: a, one, an&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个</li>
+        <li>yi ge: a, one, an&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个</li>
       <li>ha: ha(sound of laughter)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哈</li>
       <li>ren: person&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人</li>
       <li>yi si: meaning or definition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;意思</li>
@@ -546,7 +595,11 @@
       <li>yi ge peng you: a/one friend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个朋友</li>
       <li>yi ge dong xi: a/one thing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个东西</li>
     </ol>
+    </div>
+    <span id="l4dh">
     <h5>Dialogue</h5>
+    </span>
+    <span id="l4d">
     <ol class="dialogue">
       <li>English: Ben Ben: Are you a thing?<br>Pin Yin: Ben Ben: Ni shi yi ge dong xi ma?<br>Characters: 本本: 你是一个东西吗?<br>&nbsp;</li>
       <li>English: Ming Ming: No! I’m not a thing, I’m a person!<br>Pin Yin: Ming Ming: Bu shi! Wo bu shi yi ge dong xi ，wo shi yi ge ren!<br>Characters: 明明: 不是! 我不是一个东西, 我是一个人!<br>&nbsp;</li>
@@ -557,15 +610,17 @@
       <li>English: “I am not a thing” means: “I am not from this Universe. I clearly am not a person.”<br>Pin Yin: "Wo bu shi yi ge dong xi" De yi si shi: "Wo bu shi zhe ge yu zhou lai de. Wo ming ming bu shi yi ge ren."<br>Characters: 本本: "我不是一个东西" 的意思是: "我不是这个宇宙来的. 我明明不是一个人."<br>&nbsp;</li>
       <li>English: Hahahaha, that’s funny!<br>Pin Yin: Ming Ming: Ha ha ha ha, hao gao xiao!<br>Characters: 明明: 哈哈哈哈, 好搞笑!<br>&nbsp;</li>
     </ol>
-  <h5>Lesson 4 Review</h5>
-    <ol class="dialogue">
+    </span>
+    <h5 id="l4rh">Lesson 4 Review</h5>
+    <ol class="dialogue" id="l4r">
         <li>How do you say very funny in Chinese?<br><button onclick="alert('Hao gao xiao')">Click for answer!</button><br>&nbsp;</li>
         <li>Zen me yi si tong xue ma?<br><button onclick="alert('A classmate')">Click for answer!</button><br>&nbsp;</li>
         <li>Define hao.<br><button onclick="alert('Very or good')">Click for answer!</button><br>&nbsp;</li>
         <li>How do you say one, a, or an?<br><button onclick="alert('Yi ge')">Click for answer!</button><br>&nbsp;</li>
         <li>We live someplace very large with galaxies, planets, moons, and more. What do you call it in Chinese?<br><button onclick="alert('Yu zhou')">Click for answer!</button><br>&nbsp;</li>
     </ol>
-    <a href="https://quizlet.com/507083921/lesson-4-flash-cards/?new" target="_blank" title="Click for Quizlet on lesson 4">Click for Quizlet</a>
-    <br><br><a href="#my_home" title="Go back to the top of this webpage.">Back to the top</a>
+        <a href="https://quizlet.com/507083921/lesson-4-flash-cards/?new" target="_blank" title="Click to access a Quizlet on lesson 4."><img id="quizlet4_link_img" width="75" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEVCV7L////t7/ctR609U7FAVbE6UbA2Tq8qRaw5ULAyS64wSa0xSq5bbLqutdpndr76+v2Rm87c3++GkcrL0Ofo6vX09frGy+WdptOkrNZygMLS1upicr1/i8exuNvh5PFLX7VUZri8wuFvfcGWoNCMl8yBjchPYreqsdnIzOZ4hcWUF787AAAGk0lEQVR4nO2caXfqLBSFY4CEgLM2NVqrRr239f//wNehg/Vmk0mBrvc8n1sXO8CZOBAEBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEE0gSex6mp2RmsVJxEXrsd0LwSPNQvmo36+GD+FaRo+rcbTPJu8KNZNfr9MHrNg+ToedooIp9lA6eQXi+SxHPRXheK+WezW7HeKFJF8eU1L5F1YzQLNXY+3LkKp3VMleRemc5a4HnMdhBKvNeSdedrLX6NRxPX1nQj38nes1YhlTfSdNc7lL7A57FDNvBSzWMeuBZSQRNMW+k7s/J5Gdij27XUYB/5aHMEaWZh/mCvXSgBclMUvVcn8XKlJr/0K/eSZeShRze+m78hYeSdRLe8p8Bji+BaNqz/3FXiUGHslMT7cW+BRok8LNRncX+BxL0rXur7g60cIPFpUXyQKFT5GYWfWda3tglxUGW266I/mvYAnwd/BcpZXCw62kWtxJ9SufKTj3eZUQeTiDOeJYtEhL09Chj4o5L3S2cuCglqT4ErOSxORhQdbUZaUY8IJg56N63VeInHvPNFQJQn9SBoXmlB/S3ax68KGMDuKaVSasgu5NEbsz9qGDgwz7qR9pV2UcOM0vjidRW4KZtJexZqLkH3Dz7gNbdgYjywMqn98NjJInDucRL41CIzrDExP8C+t2MMElMLwBkpFvS+vDbM4cDaJJmf/t+6oGN6LU2fmVGF3vazvqA3h7dpRpig0HFLeYOuICPrFN0eF8Ahah1A3+egJLBSEjhyGhsvq0CwlwOGDG68vIjSepgkBDgFfnSzTCJbXek2/eBeZrtCJS4SWdNF4OCJAH23jwppKVJ1pEWXpZ/CbIwdpIvzebQwfjOSfHRxHQV/RynmhheFiI8borLCxnTn/KordHNT4kTds97XhMt3a94gMrKeWO6YLQreddVMD/X1Lq4eWhn2fLzZAYcsAC23EqfUCP0zvW+ZyyESvrOeIaCRpyzQAmRr77iIBpxXtv3Xx7w6tr9JkVjySRduRMKDQukOMQTW/dXgli3+3Y70jPH57lELgEAUpvDdolb4/apVGthVCS9PWlgKF9i1NAmrUbb2F4MW/m1r3+BxUadp6fAHq6PY9PkxzilcTZ7KY223LQdF0bH0OYeWv8BiFH4ZhMdObuUH7234ZQ8S1EjkFBt7p5D+XtQK1KAeFfQZ6MMDHZvAUJ9NVfnZiv7NGgRI8MnoSluwnV9MDK3g9+3Ua5PLReabQ8ER88L2woz34GwdnMxx1PaN6g4hhg9/3caoGM23flB4H3AXDhR6Rr9EBYfoVkoman+2hMNReuESVGnwqvvq4fgCX/sHF8Ros3o5h+JHAfv7peeIFqiV2nPS1424h3DuhkCHpvJ4+S4y8Zut4vhka9Ycaupg0bPQbdQOBdqGTo6fA1IrxBw9Iwn86xNhlOrqZgJepKZnDTSUb2PkwdXXVC56RmrrshUY2OIXdJs4621AecGSPv7qI6l4ydXOKfxkrHtULjpRrX8+wf+70haHta2hobIteagkcdt1dD8K9E8dxrbHEetekZi4vPxsmsTPc4MWlTB2zt7/j9IYX9tEnDjgSYaCgXMDe7a0SGCqf6eNHEiTqnLnFZYfwCaGNt7pWPdilWO22lOtW/cCQCH+QJ2AbiW6lt09eHV+3CEwlpg/64PEZwStc6mvWqXpfRFwaorzPtbo9WOGx3JR9m07L9qN7wSv47+Hzfi0vL3zxKEmUloO3Kot058frClUuIJ5UjvNsNFke/oyy3HAR5RpvrslWtvw1WXnzeISQ93oQ4weh9UNRjIgecdc582WNnuBBm4eFEIYk0z58/QiJW+dXZK/gwSMWqiGPtg+PHmBuTEmmfQQ6VWmDT/b05DQaP9SGefIgML1Cbe/3kNInPrw5cEXU+rm2f/EmdPtATu4+jX3HWf4tUVwhKaqHJxnGF0L3KhYofhL2YAC/9O0xRS63FdOjKzLGJe5l8Mnzn+HypZ7JyYPTNOFeho1Pnv8C10FWNY4b9oNLuYoHyEwNazzQYA0Rs0FeQeRior+OGyPYyxD6+fI3j1kvWxjcx3C6D/R1YBYf0uIOv/TdN2vzCU80643y8T/JVTrORxupbk0IZwBfBZ4RSawZ32wno1n29vY22+0PvYBp5dvTiC0R4lRHjI8kUcStd94TBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ/x/+A5iDVvc2zq3zAAAAAElFTkSuQmCC"><br><p id="quizlet4_link_text">&nbsp;Quizlet:<br>Lesson<span id="break">1</span>4</p></a>
+
+    <br><br><a href="#my_home" title="Go back to the top of this webpage." id="back_to_top">Back to the top</a><br>&nbsp;
   </body>
 </html>
