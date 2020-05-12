@@ -1,157 +1,158 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zhong Wen Ke</title>
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zhong Wen Ke</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-/* Add a gray background color with some padding */
-body {
-  font-family: georgia;
-  padding: 20px;
-  background: rgb(251, 204, 209);
-}
+        /* Add a gray background color with some padding */
+        body {
+            font-family: georgia;
+            padding: 20px;
+            background: rgb(251, 204, 209);
+        }
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: rgb(177, 156, 217);
-}
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: rgb(177, 156, 217);
+        }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
 
-/* Fake image */
-.fakeimg {
-  background-color: rgb(128, 206, 225);
-  width: 100%;
-  padding: 20px;
-}
+        /* Fake image */
+        .fakeimg {
+            background-color: rgb(128, 206, 225);
+            width: 100%;
+            padding: 20px;
+        }
 
-/* Add a card effect for articles */
-.card {
-   background-color: rgb(222, 165, 164);
-   padding: 20px;
-   margin-top: 20px;
-}
+        /* Add a card effect for articles */
+        .card {
+            background-color: rgb(222, 165, 164);
+            padding: 20px;
+            margin-top: 20px;
+        }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-/* Style the buttons */
-.buttons {
-  border-radius: 25px;
-  background: rgb(113, 147, 209);
-  font: georgia;
-}
-</style>
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Style the buttons */
+        .buttons {
+            border-radius: 25px;
+            background: rgb(113, 147, 209);
+            font: georgia;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="header">
-  <h2>Zhong Wen Ke (Mandarin Class)</h2>
-</div>
+    <div class="header">
+        <h2>Zhong Wen Ke (Mandarin Class)</h2>
+    </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>Who are you?</h2>
-      <h5>Lesson 1, 5/12/2020</h5>
-      <div class="fakeimg" style="height:200px;"><img src="data:image/jpeg;base64,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"></div>
-      <p>Vocabulary:</p>
-      <ol>
-        <li>wo: I, me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我</li>
-        <li>ni: you&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你</li>
-        <li>ni hao: hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你好</li>
-        <li>ta: he, she&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他</li>
-        <li>shi: is, are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是</li>
-        <li>shei: who&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谁</li>
-        <li>hao: good&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好</li>
-        <li>tang lao shi: Teacher Tom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐老师</li>
-      </ol>
-      <p>Dialogue:</p>
-      <ol>
-        <li>English: Who are you?<br>Pin Yin: Ni shi shei?<br>Characters: 你是谁?<br>&nbsp;</li>
-        <li>English: Hello! I am Teacher Tom. Who are you?<br>Pin Yin: Ni hao! Wo shi tang lao shi. Ni shi shei?<br>Characters: 你好!我是唐老师. 你是谁?<br>&nbsp;</li>
-        <li>English: Hello Teacher Tom, I am Felix<br>Pin Yin: Tang lao shi ni hao，wo shi Felix.<br>Characters: 唐老师你好, 我是Felix.<br>&nbsp;</li>
-        <li>English: Hello Felix. Who is that?<br>Pin Yin: Felix, ni hao. Ta shi shei?<br>Characters: Felix, 你好. 他是谁?<br>&nbsp;</li>
-        <li>English: She is Carolina<br>Pin Yin: Ta shì Carolina.<br>Characters: 他是Carolina.<br>&nbsp;</li>
-        <li>English: Hello Carolina<br>Pin Yin: Carolina ni hao.<br>Characters: Carolina你好.<br>&nbsp;</li>
-      </ol>
-      <p>Review</p>
-      <ol>
-        <li>Who is Tang lao shi?<br><button class="buttons" onclick="alert('Teacher Tom')">Click for answer!</button><br>&nbsp;</li>
-        <li>Translate to Chinese: "Hello, I am Alex. Who are you?"<br><button class="buttons" onclick="alert('Ni hao, wo shi Alex. Ni shi shei?')">Click for answer!</button><br>&nbsp;</li>
-        <li>What does lao shi mean?<br><button class="buttons" onclick="alert('Teacher')">Click for answer!</button><br>&nbsp;</li>
-        <li>Which means "you"?<br>A) wo<br>B) ni<br>C) ta<br><button class="buttons" onclick="alert('B) ni')">Click for answer!</button><br>&nbsp;</li>
-        <li>Translate to English: "Ni shi Bailey. Ta shi Morgan."<br><button class="buttons" onclick="alert('You are Bailey. She is Morgan.')">Click for answer!</button><br>&nbsp;</li>
-      </ol>
-      <p><a href="https://quizlet.com/507048716/lesson-2-flash-cards/?new" target="_blank" title="Click to access a Quizlet on lesson 2.">Click for a Quizlet on Lesson 1</a></p>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card" id="lesson_1">
+                <h2>Who are you?</h2>
+                <h5>Lesson 1, 5/12/2020</h5>
+                <div class="fakeimg" style="height:200px;"><img src="data:image/jpeg;base64,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"></div>
+                <p>Vocabulary:</p>
+                <ol>
+                    <li>wo: I, me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我</li>
+                    <li>ni: you&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你</li>
+                    <li>ni hao: hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你好</li>
+                    <li>ta: he, she&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他</li>
+                    <li>shi: is, are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是</li>
+                    <li>shei: who&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谁</li>
+                    <li>hao: good&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好</li>
+                    <li>tang lao shi: Teacher Tom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐老师</li>
+                </ol>
+                <p>Dialogue:</p>
+                <ol>
+                    <li>English: Who are you?<br>Pin Yin: Ni shi shei?<br>Characters: 你是谁?<br>&nbsp;</li>
+                    <li>English: Hello! I am Teacher Tom. Who are you?<br>Pin Yin: Ni hao! Wo shi tang lao shi. Ni shi shei?<br>Characters: 你好!我是唐老师. 你是谁?<br>&nbsp;</li>
+                    <li>English: Hello Teacher Tom, I am Felix<br>Pin Yin: Tang lao shi ni hao，wo shi Felix.<br>Characters: 唐老师你好, 我是Felix.<br>&nbsp;</li>
+                    <li>English: Hello Felix. Who is that?<br>Pin Yin: Felix, ni hao. Ta shi shei?<br>Characters: Felix, 你好. 他是谁?<br>&nbsp;</li>
+                    <li>English: She is Carolina<br>Pin Yin: Ta shì Carolina.<br>Characters: 他是Carolina.<br>&nbsp;</li>
+                    <li>English: Hello Carolina<br>Pin Yin: Carolina ni hao.<br>Characters: Carolina你好.<br>&nbsp;</li>
+                </ol>
+                <p>Review</p>
+                <ol>
+                    <li>Who is Tang lao shi?<br><button class="buttons" onclick="alert('Teacher Tom')">Click for answer!</button><br>&nbsp;</li>
+                    <li>Translate to Chinese: "Hello, I am Alex. Who are you?"<br><button class="buttons" onclick="alert('Ni hao, wo shi Alex. Ni shi shei?')">Click for answer!</button><br>&nbsp;</li>
+                    <li>What does lao shi mean?<br><button class="buttons" onclick="alert('Teacher')">Click for answer!</button><br>&nbsp;</li>
+                    <li>Which means "you"?<br>A) wo<br>B) ni<br>C) ta<br><button class="buttons" onclick="alert('B) ni')">Click for answer!</button><br>&nbsp;</li>
+                    <li>Translate to English: "Ni shi Bailey. Ta shi Morgan."<br><button class="buttons" onclick="alert('You are Bailey. She is Morgan.')">Click for answer!</button><br>&nbsp;</li>
+                </ol>
+                <p><a href="https://quizlet.com/507048716/lesson-2-flash-cards/?new" target="_blank" title="Click to access a Quizlet on lesson 2.">Click for a Quizlet on Lesson 1</a></p>
+            </div>
+            <div class="card" id="lesson_2">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p></p>
+            </div>
         </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p></p>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>The author of this webpage is creating it to practice HTML/CSS coding, to learn Mandarin, and to help his/her fellow students.</p>
+            </div>
+            <div class="card">
+                <h3>Recent Posts</h3>
+                <div class="fakeimg"><a href="#lesson_4">Lesson 4</a></div><br>
+                <div class="fakeimg"><a href="#lesson_3">Lesson 3</a></div><br>
+                <div class="fakeimg"><a href="#lesson_2">Lesson 2</a></div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;"><img src="data:image/png;base64,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"></div>
-      <p>The author of this webpage is creating it to practice HTML/CSS coding, to learn Mandarin, and to help his/her fellow students.</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
-</div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
 
 </body>
+
 </html>
