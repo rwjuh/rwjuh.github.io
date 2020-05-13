@@ -87,12 +87,14 @@
 </head>
 
 <body>
-<button onclick="myFunction()">Try it</button>
+<button>Click me</button>
 
 <script>
-function myFunction() {
-  var firstName = "Felix"
-  alert("Hello there, " + firstName);
+const button = document.querySelector('button');
+
+button.onclick = function() {
+  let name = prompt('What is your name?');
+  alert('Hello ' + name + ', nice to see you!');
 }
 </script>
 
