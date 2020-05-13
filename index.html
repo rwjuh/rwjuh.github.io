@@ -1,3 +1,42 @@
+/* 
+This is the template for a new lesson
+<div class="card" id="lesson_">
+                <h2></h2>
+                <h5>Lesson , </h5>
+                <div class="fakeimg" style="height:200px;"><img src="" width="150px"></div>
+                <p>Vocabulary:</p>
+                <ol>
+                  <li>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                </ol>
+                <p>Dialogue:</p>
+                <ol>
+                  <li>English: <br>Pin Yin: <br>Characters: <br>&nbsp;</li>
+                <p>Grammar</p>
+                  <table>
+                    <tr>
+                      <th>Verb</th>
+                      <th>English Sentence</th>
+                      <th>Pin Yin Sentence</th>
+                      <th>Character Sentence</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </table>
+                <p>Review</p>
+                <ol>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                </ol>
+                <p><a href="" target="_blank" title="Click to access a Quizlet on lesson .">Click for a Quizlet on Lesson </a></p>
+            </div>
+/*
 <!DOCTYPE html>
 <html>
 
@@ -86,7 +125,7 @@
         table, th, td {
           border: 1px solid black;
           border-collapse: collapse;
-          border-width: 4px;
+          border-width: 1.5px;
           padding: 5px;
         }
     </style>
@@ -293,6 +332,65 @@
                   <li>We live someplace very large with galaxies, planets, moons, and more. What do you call it in Chinese?<br><button target="_blank" class="buttons" onclick="alert('Yu zhou')">Click for answer!</button><br>&nbsp;</li>
                 </ol>
                 <p><a href="https://quizlet.com/507083921/lesson-4-flash-cards/?new" target="_blank" title="Click to access a Quizlet on lesson 4.">Click for a Quizlet on Lesson 4</a></p>
+            </div>
+            <div class="card" id="lesson_5">
+                <h2>The two of us</h2>
+                <h5>Lesson 5, 5/13/2020</h5>
+                <div class="fakeimg" style="height:200px;"><img src="data:image/png;base64,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" width="150px"></div>
+                <p>Vocabulary:</p>
+                <ol>
+                    <li>wo men: us, we&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们</li>
+                    <li>lia: two&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;俩</li>
+                    <li>kan: look, see, watch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看</li>
+                    <li>ying guo: England&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;英国</li>
+                    <li>tong xue men: classmates&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同学们</li>
+                    <li>ta men: them, they&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他们</li>
+                    <li>zai: verb used to indicate place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在</li>
+                    <li>zhong guo: China&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国</li>
+                    <li>shang wang: go on the internet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上网</li>
+                    <li>shang wan shang ke: online class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上网上课</li>
+                    <li>cong ming: smart, bright, intelligent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;聪明</li>
+                    <li>ni men: you all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你们</li>
+                    <li>yin yue ke: music class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;音乐课</li>
+                    <li>hao wan: fun, enjoyable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好玩</li>
+                    <li>zan men: us, we&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;咱们</li>
+                    <li>ye: also, too&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也</li>
+                    <li>zan men lia: the two of us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;咱们俩</li>
+                    <li>zui: most&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最</li>
+                </ol>
+                <p>Dialogue:</p>
+                <ol>
+                    <li>English: Ming Ming: Ben ben, look. These are my English classmates.<br>Pin Yin: ming ming: ben ben, ni kan, zhe shi wo de ying guo tong xue men.<br>Characters: 明明:本本, 你看, 这是我的英国同学们.<br>&nbsp;</li>
+                    <li>English: Ben Ben: How are they your classmates? They're in England. You’re in China.<br>Pin Yin: ben ben: ta men zen me shi ni de tong xue men? ta men zai ying guo. ni zai zhong guo.<br>Characters: 本本: 他们怎么是你的同学们? 他们在英国. 你在中国.<br>&nbsp;</li>
+                    <li>English: Ming Ming: We have class online.<br>Pin Yin: ming ming: wo men shang wang shang ke.<br>Characters: 明明: 我们上网上课.<br>&nbsp;</li>
+                    <li>English: Ben Ben: Online class, very smart! What class do you all take?<br>Pin Yin: ben ben: shang wang shang ke, hao cong ming! ni men shang shen me ke?<br>Characters: 本本: 上网上课, 好聪明! 你们上什么课?<br>&nbsp;</li>
+                    <li>English: Ming Ming: We take Music Class. It's really fun!<br>Pin Yin:  ming ming: wo men shang yin yue ke. hen hao wan!<br>Characters: 明明: 我们上音乐课. 很好玩!<br>&nbsp;</li>
+                    <li>English: Ben Ben: Our class is fun too, right?<br>Pin Yin: běn běn： zan men de ke ye hao wan shi ma?<br>Characters: 本本: 咱们的课也好玩, 是吗?<br>&nbsp;</li>
+                    <li>English: Ming Ming: Our class is the most fun.<br>Pin Yin: ming ming: zan men lia de ke zui hao wan><br>Characters: 明明:咱们俩的课最好玩.<br>&nbsp;</li>
+                <p>Grammar</p>
+                  <table>
+                    <tr>
+                      <th>Verb</th>
+                      <th>English Sentence</th>
+                      <th>Pin Yin Sentence</th>
+                      <th>Character Sentence</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </table>
+                <p>Review</p>
+                <ol>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                  <li><br><button class="buttons" onclick="alert('')">Click for answer!</button><br>&nbsp;</li>
+                </ol>
+                <p><a href="" target="_blank" title="Click to access a Quizlet on lesson .">Click for a Quizlet on Lesson </a></p>
             </div>
         </div>
         <div class="rightcolumn">
